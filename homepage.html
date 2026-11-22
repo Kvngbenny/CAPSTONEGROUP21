@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseConnect | Student Materials</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <logo><img src="BCC.JPG"></logo>
+        <h1>BIT Course<span>Connect</span></h1>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>Welcome to <strong>BITCourseConnect</strong>, your one-stop platform for accessing student materials and resources. Explore our extensive collection of study guides, lecture notes, and more to enhance your learning experience.</p>
+        </section>
+
+        <section class="study-section">
+            <h2>Study Guides</h2>
+            <p>Access comprehensive study guides for various subjects to help you prepare for exams and assignments.</p>
+        </section>
+<table>
+            <th colspan="4"> BIT1 COURSE DETAILS</th>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+    <th>Course Code</th>
+    <th>Course Name</th>
+    <th>Course Tutor</th>
+    <th>Course Credit</th>
+</tr>
+<tr>
+  <td>BIT 152</td>
+  <td>Introduction to Structured Programming II</td>
+  <td>K. Takyi</td>
+  <td>3 Credits</td>
+</tr>
+<tr>
+  <td>BIT 158</td>
+  <td>Introduction To Information Technology II</td>
+  <td>L.A. Banning</td>
+  <td>3 Credits</td>
+</tr>
+<tr>
+  <td>BIT 166</td>
+  <td>Discrete Mathematics</td>
+  <td>K. A. Gyamfi</td>
+  <td>3 Credits</td>
+</tr>
+<tr>
+  <td>MATH 162</td>
+  <td>Calculus II / Mathematics for IT II</td>
+  <td>A. Lawton / K.P. Frimpong</td>
+  <td>3 Credits</td>
+</tr>
+
+ <tr>
+  <td>STAT 166</td>
+  <td>Probability and Statistics</td>
+  <td>J.K. Afriyie</td>
+  <td>3 Credits</td>
+</tr>
+<tr>
+  <td>ENGL 158</td>
+  <td>Communication Skills II</td>
+  <td>T. Oduro Kwarteng</td>
+  <td>2 Credits</td>
+</tr>
+<tr>
+  <td>ECON 152</td>
+  <td>Principles of Economics II</td>
+  <td>R.E. Ayibor</td>
+  <td>3 Credits</td>
+</tr>
+
+        <table>
+            <th colspan="4"> BIT2 COURSE DETAILS</th>
+            <table border="1" cellpadding="10" cellspacing="0">
+<tr>
+    <th>Course Code</th>
+    <th>Course Name</th>
+    <th>Course Tutor</th>
+    <th>Course Credit</th>
+</tr>
+<tbody>
+<tr>
+    <td>BIT 263</td>
+    <td>Programming With Visual Basic</td>
+    <td>E.O OPPONG</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>BIT 297</td>
+    <td>Database Concepts And Technologies</td>
+    <td>K.O PEASAH</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>BIT 293</td>
+    <td>Web-Based Concepts And Technology</td>
+    <td>L.A BANNING</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>BIT 253</td>
+    <td>Developmental Systems Using Java</td>
+    <td>F. TWUM</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>BIT 261</td>
+    <td>Information Systems In Organisations</td>
+    <td>E. AHENE</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>ENGL 263</td>
+    <td>Literature In English</td>
+    <td>C.A ISSAKAH</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>BIT 255</td>
+    <td>Open Source Operating Systems</td>
+    <td>K. TAKYI</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>BIT 291</td>
+    <td>Systems Analysis And Design</td>
+    <td>Y.M MISSAH</td>
+    <td>2</td>
+</tr>
+</tbody>
+</table>
+        
+
+        <section class="search-panel">
+            <div class="year-selector">
+                <label for="year-select">Choose your BIT level</label>
+                <select id="year-select">
+                    <option value="">Select Academic Year</option>
+                    <option value="BIT1">BIT 1 - First Year</option>
+                    <option value="BIT2">BIT 2 - Second Year</option>
+                </select>
+            </div>
+
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="Search by course code or course name..." aria-label="Search for a course">
+                <button id="search-button" type="button">Search</button>
+            </div>
+
+            <div class="hint" id="search-hint" hidden>
+                Showing results for: <span id="search-query"></span>
+            </div>
+<a href="https://drive.google.com/drive/folders/1dHL8rPRNeDtNSJThoftqfJrkujESiEs6?usp=sharing">
+     <em>Can't find course or study material ?</em></a>
+            <div class="results" id="search-results" aria-live="polite"></div>
+        </section>
+
+        <aside class="course-details" id="course-details" hidden>
+            <h3 id="course-code">Course</h3>
+            <h4 id="course-name"></h4>
+            <p id="course-description"></p>
+            <a id="course-link" class="course-link" href="#" hidden>Open Study Material</a>
+        </aside>
+    </main>
+
+    <script src="homepage.js"></script>
+</body>
+</html>

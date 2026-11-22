@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f8f5;
+    color: #1d2a1d;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1509bc;
+    color: #f4f8f5;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+img {
+    width: 60px;
+    height: auto;
+    border-radius: 20%;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+header h1 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+}
+
+header span {
+    color: #0a4ef9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.intro,
+.study-section,
+.search-panel,
+.course-details {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(19, 9, 161, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    color: #1509bc;
+}
+
+.year-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.year-selector label {
+    font-weight: 700;
+    color: #1509bc;
+}
+
+.year-selector select {
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #cfe5d5;
+    font-size: 1rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    transition :background 0.3s ease;
+    background: #f4f8f5;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.9rem 1rem;
+    border: 1px solid #cfe5d5;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    border: none;
+    background: #1509bc;
+    color: white;
+    border-radius: 12px;
+    padding: 0.9rem 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-box button:hover {
+    background: #1509bc;
+}
+
+.hint {
+    margin: 1rem 0 0.5rem;
+    color: #1509bc;
+    font-weight: 600;
+}
+
+.results {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #dfeee2;
+    background: #f9fdf9;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.result-item:hover {
+    border-color: #1509bc;
+    background: #edf9f0;
+}
+
+.course-code {
+    font-weight: 700;
+    color: #1509bc;
+}
+
+.course-name {
+    color: #1509bc;
+}
+
+.no-results {
+    color: #1509bc;
+    padding: 1rem 0;
+}
+
+.course-details h3 {
+    color: #1509bc;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.course-details h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #1509bc;
+}
+
+.course-details p {
+    color: #1509bc;
+}
+
+.course-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background: #eafaf0;
+    border: 1px solid #1509bc;
+    border-radius: 10px;
+    color: #1509bc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.course-link:hover {
+    background: #dff7e6;
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .result-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    color: #1509bc;
+}
+option {
+    color: #1509bc;
+}
+logo{
+    align-items: center;
+}
+
+strong{
+    color: #1509bc;
+}
